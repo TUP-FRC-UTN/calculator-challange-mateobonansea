@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,8 +9,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './calculadora.component.css'
 })
 export class CalculadoraComponent {
-valor1: number = 0;
-valor2: number = 0;
+@Input() valor1: number = 0;
+@Input() valor2: number = 0;
 
 @Output() resultado = new EventEmitter<number>();
 
