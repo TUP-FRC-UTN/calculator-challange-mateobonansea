@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center">
+  <div class="container border border-info-subtle p-4">
+    <h1 class="text-center">Calculadora</h1>
+    <app-calculadora (resultado)="manejarResultado($event)"></app-calculadora>
+    <div class="text-center">
+      @if(resultado!== null) {
+        <h2>Resultado: {{ resultado }}</h2>
+      }
+      @else {
+        <h2>ERROR NULO </h2>
+      }
+        
+    </div>
+  </div>
+</div>

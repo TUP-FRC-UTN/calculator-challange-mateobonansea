@@ -1,0 +1,14 @@
+<p>calculadora works!</p>
+<div class="container allign-content-center justify-content-center "></div>
+<div>
+    <input type="number" [(ngModel)]="valor1" placeholder="Valor 1">
+    <input type="number" [(ngModel)]="valor2" placeholder="Valor 2">
+
+    <button class="btn btn-dark" (click)="calcular('suma')">+</button>
+    <button class="btn btn-dark"(click)="calcular('resta')">-</button>
+    <button class="btn btn-dark"(click)="calcular('multiplicacion')">*</button></div>
+
+    <button class="btn btn-dark"(click)="calcular('division')">/</button>
+    <button class="btn btn-dark"(click)="calcular('potencia')">^</button>
+    <button class="btn btn-dark"(click)="calcular('raiz')">Raíz</button>
+
